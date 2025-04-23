@@ -8,6 +8,7 @@ Plugin for procedural generation of 3D trees of varying complexity.
 - Godot 4.1
 - Godot 4.2
 - Godot 4.3
+- May be worked on Godot 4.4
 
 <img src="image/preview.png">
 
