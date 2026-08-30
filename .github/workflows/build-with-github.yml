@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        godot_cpp_branch: ["4.5"]
+        godot_cpp_branch: ["4.5", "4.6","4.7"]
         # do NOT compile CPU archs in one go, would result in corrupted DLL (probably due to file-resue of 32bit files in 64bit run)
         target_arch: [x86_32, x86_64]
     steps:
