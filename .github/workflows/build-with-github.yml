@@ -5,10 +5,8 @@ permissions:
 
 on:
   push:
-    # build and bundle for every branch push
-    branches: ["*"]
-    # create github release when commit was marked via "git tag"
-    tags: ["v*"]
+    tags:
+      - "v*"
 
 jobs:
   Build-Linux:
@@ -138,7 +136,7 @@ jobs:
       - name: move artifacts to their proper place
         run: |
           mkdir -p demo/addons/
-          mv generated-binaries/* demo/addons/
+          cp -rf generated-binaries/* demo/addons/
       - name: create gdExtension ZIP for Godot ${{ matrix.godot_cpp_branch }}
         uses: actions/upload-artifact@v4
         with:

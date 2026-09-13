@@ -10,6 +10,7 @@ Plugin for procedural generation of 3D trees of varying complexity.
 - Procedural tree generation. Control the height, slope, number of branches, branch length, gravity, twist, and detail.
 - Turn leaves on or off depending on the season, plant size and material.
 - Generate collision automatically, fast for collisions with tree trunks only, or detailed for the trunk and all tree branches.
+- Advanced wind system. Fine-tune generated vertex colors for wind influence and apply the specially supported Tree3DUniversalMaterial shader to any trees.
 - Create procedural tree growth from a sapling to a large mature tree using code.
 
 ## Supported Godot Engine Versions
@@ -20,6 +21,8 @@ Plugin for procedural generation of 3D trees of varying complexity.
 ## Notes
 - To ensure the tree displays correctly, use Cull Mode: Front for the tree trunk material.
 - To change the season, you can make one unique leaf material for all the trees and then change its color or texture to make them yellow.
+
+<img src="https://github.com/JekSun97/gdTree3D/blob/main/image/Wind.gif?raw=true">
 
 ## Building the GDExtension
 
@@ -41,9 +44,10 @@ docker run --rm -v "$(pwd):/source" tree3dbuilder:latest scons target=template_r
 ```
 
 ## Soon...
-- Wind and swaying foliage.
-- A tool for quickly placing trees and forests in any location or landscape.
-- Support for custom models instead of default foliage.
+- [x] Wind and swaying foliage.
+- [ ] A tool for quickly placing trees and forests in any location or landscape.
+- [ ] Support for custom models instead of default foliage.
+- [ ] Automatic LOD.
 
 ## Donations
 If you liked this plugin, you could send me a thank you via Ko-Fi using [Ko-Fi](https://ko-fi.com/jeksun), I would be very grateful!
